@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>How to create the dxDataGrid widget</title>
+
+    <!-- Framework -->
+    <script type="text/javascript" src="lib/jquery-2.1.0.min.js"></script>
+    <script type="text/javascript" src="lib/globalize.min.js"></script>
+    <script type="text/javascript" src="lib/dx.webappjs.js"></script>
+
+    <script type="text/javascript" src="data.js"></script>
+
+    <!-- CSS -->
+    <link rel="stylesheet" type="text/css" href="css/dx.common.css" />
+    <link rel="stylesheet" type="text/css" href="css/dx.light.css" />
+
+    <!-- JS code -->
+    <script type="text/javascript">
+        $(document).ready(function () {
+
+            $("#gridContainer").dxDataGrid({
+                dataSource: employees,
+                columns: [
+                    'TitleOfCourtesy',
+                    'FirstName',
+                    'LastName',
+                    {
+                        dataField: 'BirthDate',
+                        dataType: 'date'
+                    },
+                    {
+                        dataField: 'HireDate',
+                        dataType: 'date'
+                    },
+                    {
+                        dataField: 'Title',
+                        width: 300,
+                        filterOperations: ['startswith', 'contains', '='],
+                        selectedFilterOperation: 'contains'
+                    }
+                ],
+                paging: {
+                    pageSize: 6
+                },
+                sorting: {
+                    mode: "multiple"
+                },
+                filterRow: {
+                    visible: true
+                },
+                allowColumnReordering: true,
+                allowColumnResizing: true,
+                groupPanel: {
+                    visible: true
+                },
+                selection: {
+                    mode: "multiple"
+                },
+                editing: {
+                    editMode: 'batch',
+                    editEnabled: true,
+                    removeEnabled: true,
+                    insertEnabled: true
+                }
+            });
+
+
+
+        })
+    </script>
+</head>
+<body>
+
+    <div id="gridContainer" style="height: 300px; width: 100%"></div>
+
+</body>
+</html>
