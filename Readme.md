@@ -4,7 +4,7 @@
 <!-- default file list end -->
 # How to configure dxDataGrid with jQuery Approach
 <!-- run online -->
-**[[Run Online]](https://codecentral.devexpress.com/t119614)**
+**[[Run Online]](https://codecentral.devexpress.com/t119614/)**
 <!-- run online end -->
 
 
