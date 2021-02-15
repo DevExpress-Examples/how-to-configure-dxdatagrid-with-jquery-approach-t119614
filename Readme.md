@@ -1,15 +1,3 @@
-<!-- default file list -->
-*Files to look at*:
+# This example is obsolete
 
-<!-- default file list end -->
-# How to configure dxDataGrid with jQuery Approach
-<!-- run online -->
-**[[Run Online]](https://codecentral.devexpress.com/t119614/)**
-<!-- run online end -->
-
-
-This is the project that you will get if you go though the <a href="http://www.youtube.com/watch?v=KJpS2Iwrrg8&list=PL8h4jt35t1wjGvgflbHEH_e3b23AA30-z&index=6">HTML5 DataGrid</a> video tutorial.
-
-<br/>
-
-
+<p>From v18.1, the DevExtreme hybrid mobile-related tools, including DevExtreme SPA Framework, are deprecated. See <a href="https://community.devexpress.com/blogs/aspnet/archive/2018/02/26/devextreme-hybrid-mobile-tools-deprecation-in-v18-1.aspx"><u>this blog post</u></a> for more information. The mobile tools documentation was removed from the newer versions, but you can still find it in <a href="https://js.devexpress.com/Documentation/17_2/Guide/SPA_Framework/Application_Development/"><u>the older versions</u></a>.</p>
